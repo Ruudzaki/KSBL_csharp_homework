@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSBL_Task_1_2_1_Console", "KSBL_Task_1_2_1_Console.csproj", "{3F525689-5F1E-43DA-A290-E97B813D5E5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSBL_Task_1_2_2_Console", "KSBL_Task_1_2_2_Console.csproj", "{3F525689-5F1E-43DA-A290-E97B813D5E5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
