@@ -21,7 +21,7 @@ namespace KSBL_ClassWork_181019_1
             Console.ReadKey();
 
         }
-
+        
         static private void GetResultDay(int value)
         {
             Console.WriteLine();
@@ -59,7 +59,8 @@ namespace KSBL_ClassWork_181019_1
             }
 
         }
-
+        
+        
         static private void GetResult(int value)
         {
 
