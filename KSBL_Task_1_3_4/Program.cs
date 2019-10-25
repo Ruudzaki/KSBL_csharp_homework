@@ -28,6 +28,9 @@ namespace KSBL_Task_1_3_4
         static double GetCylinderArea(int r, int h) 
         {
             return 2 * pi * r * (r + h);
+
+            ;
+            ;
         }
     }
 }
