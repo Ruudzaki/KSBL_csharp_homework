@@ -56,7 +56,7 @@ namespace KSBL_Task_3_6_3
         {
             for (int i = 0; i < heigth / 2 + 1; i++)
             {
-                for (int j = heigth, k = 0; j > 0 && k < heigth; k++, j--)
+                for (int j = heigth, k = 0; j > 0; k++, j--)
                 {
                     if (i > k || i >= j)
                     {
@@ -76,8 +76,7 @@ namespace KSBL_Task_3_6_3
 
             for (int i = heigth / 2 + 1; i > 0; i--)
             {
-                Console.Write("\n");
-                for (int j = heigth, k = 0; j > 0 && k < heigth; k++, j--)
+                for (int j = heigth, k = 0; j > 0; k++, j--)
                 {
                     if (i > k  || i >= j)
                     {
@@ -88,12 +87,12 @@ namespace KSBL_Task_3_6_3
                         Console.Write("*");
                     }
                 }
+                Console.Write("\n");
             }
 
             for (int i = 0; i < heigth / 2 + 1; i++)
             {
-                Console.Write("\n");
-                for (int j = heigth, k = 0; j > 0 && k < heigth; k++, j--)
+                for (int j = heigth, k = 0; j > 0; k++, j--)
                 {
                     if (i > k || i >= j)
                     {
@@ -104,6 +103,7 @@ namespace KSBL_Task_3_6_3
                         Console.Write("*");
                     }
                 }
+                Console.Write("\n");
             }
         }
     }
