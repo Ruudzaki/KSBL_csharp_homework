@@ -52,14 +52,29 @@ namespace KSBL_Task_4_8_4
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            int result1, result2;
+
             if ((bool)radioButton.IsChecked)
             {
-                textBox2.Text = (int.Parse(textBox.Text) % int.Parse(textBox1.Text)).ToString();
+                if (int.TryParse(textBox.Text, out result1) && int.TryParse(textBox1.Text, out result2))
+                {
+                    if (result2 != 0)
+                    {
+                        textBox2.Text = (result1 % result2).ToString();
+                    }
+                    else
+                    {
+                        textBox2.Text = "Undefined";
+                    }
+                }
             }
 
             if ((bool)radioButton_Copy.IsChecked)
             {
-                textBox2.Text = Math.Pow(int.Parse(textBox.Text), int.Parse(textBox1.Text)).ToString();
+                if (int.TryParse(textBox.Text, out result1) && int.TryParse(textBox1.Text, out result2))
+                {
+                    textBox2.Text = Math.Pow(result1, result2).ToString();
+                }
             }
 
             if ((bool)radioButton_Copy1.IsChecked)
@@ -69,7 +84,17 @@ namespace KSBL_Task_4_8_4
 
             if ((bool)radioButton_Copy2.IsChecked)
             {
-                textBox2.Text = (int.Parse(textBox.Text) / int.Parse(textBox1.Text)).ToString();
+                if (int.TryParse(textBox.Text, out result1) && int.TryParse(textBox1.Text, out result2))
+                {
+                    if (result2 != 0)
+                    {
+                        textBox2.Text = (result1 / result2).ToString();
+                    }
+                    else
+                    {
+                        textBox2.Text = "Undefined";
+                    }
+                }
             }
 
         }
